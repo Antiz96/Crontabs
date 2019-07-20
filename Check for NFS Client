@@ -1,0 +1,1 @@
+0 1 * * * for i in $(netstat -pan | grep -i 2049 | grep -v 0.0.0.0 | grep -v :: | awk '{ print $5 }' | sed "s/:.*//") ; do nslookup $i | awk '{ print $4}' ; done

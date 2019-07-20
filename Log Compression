@@ -1,0 +1,1 @@
+0 2 * * * find /etc/jbossas/domain/servers/ws-prod-2/log -mtime +1 -exec gzip -9 {} \;

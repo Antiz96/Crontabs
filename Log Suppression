@@ -1,0 +1,1 @@
+0 1 * * * find /etc/jbossas/domain/servers/ws-prod-2/log -mtime +7 -exec rm -rf {} \;
